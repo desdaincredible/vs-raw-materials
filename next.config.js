@@ -1,6 +1,7 @@
 const data = require("./utils/pages");
 
 module.exports = {
+  target: "serverless",
   trailingSlash: true,
   exportPathMap: async function () {
     const { pages } = data;

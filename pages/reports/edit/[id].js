@@ -1,12 +1,12 @@
-import Link from 'next/link'
+import Link from "next/link";
 
-import Layout from '../../../components/layout'
-import Datepicker from '../../../components/datepicker'
+import Layout from "../../../components/layout";
+import Datepicker from "../../../components/datepicker";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTimes, faPlus } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes, faPlus } from "@fortawesome/free-solid-svg-icons";
 
-export default function ReportsEdit() {
+const ReportsEdit = () => {
   return (
     <Layout>
       <h1>Reports</h1>
@@ -16,7 +16,7 @@ export default function ReportsEdit() {
         <table className="table align-middle align-middle mx-2">
           <thead>
             <tr>
-              <th scope="col" style={{ width: '10%' }}>
+              <th scope="col" style={{ width: "10%" }}>
                 Quantity
               </th>
               <th scope="col">Nicotine</th>
@@ -77,5 +77,7 @@ export default function ReportsEdit() {
         </button>
       </form>
     </Layout>
-  )
-}
+  );
+};
+
+export default ReportsEdit;

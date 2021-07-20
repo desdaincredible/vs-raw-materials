@@ -1,8 +1,8 @@
-import Layout from '../../components/layout'
-import Datepicker from '../../components/datepicker'
-import CSVReader from '../../components/csv-reader'
+import Layout from "../../components/layout";
+import Datepicker from "../../components/datepicker";
+import CSVReader from "../../components/csv-reader";
 
-export default function ReportsNew() {
+const ReportsNew = () => {
   return (
     <Layout>
       <h1>Reports</h1>
@@ -15,5 +15,7 @@ export default function ReportsNew() {
       </div>
       <CSVReader />
     </Layout>
-  )
-}
+  );
+};
+
+export default ReportsNew;

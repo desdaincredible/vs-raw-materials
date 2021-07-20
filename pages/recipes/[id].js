@@ -1,9 +1,9 @@
-import Layout from '../../components/layout'
+import Layout from "../../components/layout";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTimes } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
-export default function RecipesView() {
+const RecipesView = () => {
   return (
     <Layout>
       <h1>Recipes</h1>
@@ -66,5 +66,7 @@ export default function RecipesView() {
         `}
       </style>
     </Layout>
-  )
-}
+  );
+};
+
+export default RecipesView;

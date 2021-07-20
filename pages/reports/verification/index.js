@@ -1,8 +1,8 @@
-import Layout from '../../../components/layout'
-import TableButtons from '../../../components/table-buttons'
-import Pagination from '../../../components/pagination'
+import Layout from "../../../components/layout";
+import TableButtons from "../../../components/table-buttons";
+import Pagination from "../../../components/pagination";
 
-export default function QualityVerification() {
+const QualityVerification = () => {
   return (
     <Layout>
       <h1>Quality Verification</h1>
@@ -46,5 +46,7 @@ export default function QualityVerification() {
         <Pagination />
       </div>
     </Layout>
-  )
-}
+  );
+};
+
+export default QualityVerification;

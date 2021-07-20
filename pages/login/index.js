@@ -1,39 +1,39 @@
-import Layout from '../../components/layout'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
-import { Button, Form } from 'reactstrap'
-import Input from '../../components/form/input'
-import { useState } from 'react'
+import Layout from "../../components/layout";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { Button, Form } from "reactstrap";
+import Input from "../../components/form/input";
+import { useState } from "react";
 
-export default function Login() {
-  const router = useRouter()
+const Login = () => {
+  const router = useRouter();
 
   const [data, setData] = useState({
-    username: '',
-    password: '',
-  })
+    username: "",
+    password: "",
+  });
 
-  const [error, setError] = useState(false)
-  const [errorMessage, setErrorMessage] = useState('')
+  const [error, setError] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   async function submit(e) {
-    e.preventDefault()
+    e.preventDefault();
     if (data.username && data.password) {
       const response = await fetch(`/api/user/${data.username}`, {
-        method: 'POST',
+        method: "POST",
         body: JSON.stringify({ data }),
-      })
-      const json = await response.json()
-      console.log(json)
+      });
+      const json = await response.json();
+      console.log(json);
       if (response.status === 200) {
-        router.push('/reports/new')
+        router.push("/reports/new");
       } else {
-        setError(true)
-        setErrorMessage('Incorrect login credentials.')
+        setError(true);
+        setErrorMessage("Incorrect login credentials.");
       }
     } else {
-      setError(true)
-      setErrorMessage('Please fill in username and password.')
+      setError(true);
+      setErrorMessage("Please fill in username and password.");
     }
   }
 
@@ -50,7 +50,7 @@ export default function Login() {
               setData((data) => ({
                 ...data,
                 username: value,
-              }))
+              }));
             }}
           />
         </div>
@@ -62,7 +62,7 @@ export default function Login() {
               setData((data) => ({
                 ...data,
                 password: value,
-              }))
+              }));
             }}
           />
         </div>
@@ -79,5 +79,7 @@ export default function Login() {
         {error && <p className="text-danger mt-2">{errorMessage}</p>}
       </Form>
     </Layout>
-  )
-}
+  );
+};
+
+export default Login;

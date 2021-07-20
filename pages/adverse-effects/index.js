@@ -75,4 +75,4 @@ const AdverseReactionsIndex = () => {
   );
 };
 
-module.exports = AdverseReactionsIndex;
+export default AdverseReactionsIndex;

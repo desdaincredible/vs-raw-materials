@@ -1,9 +1,9 @@
-import Layout from '../../components/layout'
+import Layout from "../../components/layout";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTimes, faPlus } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes, faPlus } from "@fortawesome/free-solid-svg-icons";
 
-export default function RecipesNew() {
+const RecipesNew = () => {
   return (
     <Layout>
       <h1>Recipes</h1>
@@ -72,7 +72,7 @@ export default function RecipesNew() {
             <button
               type="button"
               className="btn btn-sm btn-dark"
-              style={{ marginTop: '2.65em' }}
+              style={{ marginTop: "2.65em" }}
             >
               <FontAwesomeIcon icon={faTimes} />
             </button>
@@ -85,5 +85,7 @@ export default function RecipesNew() {
         </div>
       </form>
     </Layout>
-  )
-}
+  );
+};
+
+export default RecipesNew;

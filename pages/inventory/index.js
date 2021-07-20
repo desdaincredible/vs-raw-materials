@@ -1,8 +1,8 @@
-import Layout from '../../components/layout'
-import Search from '../../components/search'
-import Pagination from '../../components/pagination'
+import Layout from "../../components/layout";
+import Search from "../../components/search";
+import Pagination from "../../components/pagination";
 
-export default function InventoryIndex() {
+const InventoryIndex = () => {
   return (
     <Layout>
       <h1>Raw Materials Inventory</h1>
@@ -12,7 +12,7 @@ export default function InventoryIndex() {
         <table className="table align-middle mx-2">
           <thead>
             <tr>
-              <th scope="col" style={{ width: '10%' }}>
+              <th scope="col" style={{ width: "10%" }}>
                 Quantity
               </th>
               <th scope="col">Description</th>
@@ -70,5 +70,7 @@ export default function InventoryIndex() {
         </div>
       </form>
     </Layout>
-  )
-}
+  );
+};
+
+export default InventoryIndex;

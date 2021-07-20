@@ -1,10 +1,10 @@
-import Layout from '../../../components/layout'
-import Datepicker from '../../../components/datepicker'
+import Layout from "../../../components/layout";
+import Datepicker from "../../../components/datepicker";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTimes, faPlus } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes, faPlus } from "@fortawesome/free-solid-svg-icons";
 
-export default function Receiving() {
+const Receiving = () => {
   return (
     <Layout>
       <h1>Receiving</h1>
@@ -14,7 +14,7 @@ export default function Receiving() {
         <table className="table align-middle mx-2">
           <thead>
             <tr>
-              <th scope="col" style={{ width: '10%' }}>
+              <th scope="col" style={{ width: "10%" }}>
                 Quantity
               </th>
               <th scope="col">Product</th>
@@ -56,5 +56,7 @@ export default function Receiving() {
         </div>
       </form>
     </Layout>
-  )
-}
+  );
+};
+
+export default Receiving;

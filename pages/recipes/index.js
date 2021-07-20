@@ -1,10 +1,10 @@
-import Link from 'next/link'
-import Layout from '../../components/layout'
-import Pagination from '../../components/pagination'
-import Search from '../../components/search'
-import TableButtons from '../../components/table-buttons'
+import Link from "next/link";
+import Layout from "../../components/layout";
+import Pagination from "../../components/pagination";
+import Search from "../../components/search";
+import TableButtons from "../../components/table-buttons";
 
-export default function RecipesIndex() {
+const RecipesIndex = () => {
   return (
     <Layout>
       <h1>Recipes</h1>
@@ -33,5 +33,7 @@ export default function RecipesIndex() {
         <Pagination />
       </div>
     </Layout>
-  )
-}
+  );
+};
+
+export default RecipesIndex;

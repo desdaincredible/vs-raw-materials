@@ -1,14 +1,14 @@
-import { useState } from 'react'
-import Link from 'next/link'
-import { Button, Form, Table } from 'reactstrap'
-import Layout from '../../components/layout'
-import Input from '../../components/form/input'
+import { useState } from "react";
+import Link from "next/link";
+import { Button, Form, Table } from "reactstrap";
+import Layout from "../../components/layout";
+import Input from "../../components/form/input";
 
-export default function UsersIndex() {
+const UsersIndex = () => {
   const [data, setData] = useState({
-    username: '',
-    password: '',
-  })
+    username: "",
+    password: "",
+  });
   function submit() {}
   return (
     <Layout>
@@ -54,7 +54,7 @@ export default function UsersIndex() {
               setData((data) => ({
                 ...data,
                 username: value,
-              }))
+              }));
             }}
           />
         </div>
@@ -66,7 +66,7 @@ export default function UsersIndex() {
               setData((data) => ({
                 ...data,
                 password: value,
-              }))
+              }));
             }}
           />
         </div>
@@ -82,5 +82,7 @@ export default function UsersIndex() {
         </div>
       </Form>
     </Layout>
-  )
-}
+  );
+};
+
+export default UsersIndex;

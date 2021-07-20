@@ -4,7 +4,7 @@ import Layout from "../../components/layout";
 import TableButtons from "../../components/table-buttons";
 import Pagination from "../../components/pagination";
 
-function AdverseReactionsIndex() {
+const AdverseReactionsIndex = () => {
   return (
     <Layout>
       <div className="d-flex justify-content-between">
@@ -73,6 +73,6 @@ function AdverseReactionsIndex() {
       <Pagination />
     </Layout>
   );
-}
+};
 
 module.exports = AdverseReactionsIndex;

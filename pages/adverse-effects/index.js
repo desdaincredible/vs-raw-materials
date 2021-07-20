@@ -1,10 +1,10 @@
-import Datepicker from '../../components/datepicker'
+import Datepicker from "../../components/datepicker";
 
-import Layout from '../../components/layout'
-import TableButtons from '../../components/table-buttons'
-import Pagination from '../../components/pagination'
+import Layout from "../../components/layout";
+import TableButtons from "../../components/table-buttons";
+import Pagination from "../../components/pagination";
 
-export default function AdverseReactionsIndex() {
+function AdverseReactionsIndex() {
   return (
     <Layout>
       <div className="d-flex justify-content-between">
@@ -17,7 +17,7 @@ export default function AdverseReactionsIndex() {
       </div>
       <form>
         <div className="row mb-3">
-          <div className="col-sm-3" style={{ width: '22%' }}>
+          <div className="col-sm-3" style={{ width: "22%" }}>
             <label htmlFor="date" className="form-label">
               Date
             </label>
@@ -50,7 +50,7 @@ export default function AdverseReactionsIndex() {
             <button
               type="button"
               className="btn btn-sm btn-primary"
-              style={{ marginTop: '2.65em' }}
+              style={{ marginTop: "2.65em" }}
             >
               Save
             </button>
@@ -72,5 +72,7 @@ export default function AdverseReactionsIndex() {
 
       <Pagination />
     </Layout>
-  )
+  );
 }
+
+module.exports = AdverseReactionsIndex;

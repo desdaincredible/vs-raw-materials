@@ -7,12 +7,38 @@
     "build": "next build && next export"
   },
   "dependencies": {
+    "bootstrap": "^5.0.2",
+    "css-loader": "^6.2.0",
+    "get-orientation": "^1.1.2",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^10.0.7",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "bcrypt": "^5.0.1",
+    "react-datepicker": "^3.8.0",
+    "react-papaparse": "^3.14.0",
+    "reactstrap": "^8.9.0",
+    "sass": "^1.32.11",
+    "serverless-mysql": "^1.5.4",
+    "sql-template-strings": "^2.2.2"
   },
   "devDependencies": {
-    "serve": "^11.3.2"
+    "serve": "^11.3.2",
+    "husky": "^6.0.0",
+    "lint-staged": "^10.5.4",
+    "prettier": "2.2.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,md}": [
+      "prettier --write"
+    ]
   }
 }

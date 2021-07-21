@@ -36,4 +36,5 @@ const pages = [
     slug: "adverse-effects",
   },
 ];
+
 module.exports = { pages };

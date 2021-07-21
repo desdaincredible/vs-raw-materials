@@ -11,7 +11,7 @@ module.exports = {
 
     pages.forEach((page) => {
       paths[`/${page.slug}`] = {
-        page: "/[path]",
+        page: "/[locale]/[path]",
         query: { path: page.slug },
       };
     });

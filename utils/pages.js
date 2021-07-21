@@ -1,45 +1,40 @@
 const pages = [
   {
     id: "reports",
-    name: "reports",
-    locale: "reports",
+    name: "Reports",
     path: "reports",
     slug: "reports",
   },
   {
     id: "reportsNew",
-    name: "reportsNew",
-    locale: "reports",
-    path: "/new",
+    name: "New Report",
+    path: "reports/new",
     slug: "reports/new",
   },
   {
     id: "recipes",
-    name: "recipes",
-    locale: "recipes",
+    name: "Recipes",
     path: "recipes",
     slug: "recipes",
   },
   {
     id: "recipesNew",
-    name: "recipesNew",
-    locale: "recipes",
-    path: "/new",
+    name: "New Recipe",
+    path: "recipes/new",
     slug: "recipes/new",
   },
   {
     id: "inventoryReceiving",
-    name: "inventoryReceiving",
-    locale: "inventory",
-    path: "/receiving",
+    name: "Receiving",
+    path: "inventory/receiving",
     slug: "inventory/receiving",
   },
   {
     id: "adverseEffects",
-    name: "adverseEffects",
-    locale: "adverse-effects",
+    name: "Adverse Effects",
     path: "adverse-effects",
     slug: "adverse-effects",
   },
 ];
+
 module.exports = { pages };

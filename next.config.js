@@ -1,6 +1,7 @@
 const data = require("./utils/pages");
 
 module.exports = {
+  target: "serverless",
   trailingSlash: true,
   exportPathMap: async function () {
     const { pages } = data;
@@ -10,7 +11,7 @@ module.exports = {
 
     pages.forEach((page) => {
       paths[`/${page.slug}`] = {
-        page: "/[locale]/[path]",
+        page: "/[path]",
         query: { path: page.slug },
       };
     });

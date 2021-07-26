@@ -14,7 +14,7 @@ module.exports = {
       paths[`/${page.slug}`] = {
         page: page.path ? `${page.locale}}/${page.path}` : `${page.locale}`,
         // page: "/page/[path]",
-        query: { path: page.slug },
+        // query: { path: page.slug },
       };
     });
 

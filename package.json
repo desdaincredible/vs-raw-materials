@@ -10,15 +10,15 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
-    "react-datepicker": "^3.8.0",
-    "reactstrap": "^8.9.0",
-    "react-papaparse": "^3.14.0",
-    "sass": "^1.32.11",
     "bootstrap": "^5.0.0-beta3",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^10.0.7",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-datepicker": "^3.8.0",
+    "react-dom": "16.13.1",
+    "react-papaparse": "^3.14.0",
+    "reactstrap": "^8.9.0",
+    "sass": "^1.32.11"
   },
   "devDependencies": {
     "serve": "^11.3.2"

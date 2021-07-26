@@ -1,10 +1,10 @@
-import Layout from "../../components/layout";
-import Search from "../../components/search";
-import TableButtons from "../../components/table-buttons";
-import Pagination from "../../components/pagination";
+import Layout from '../../components/layout'
+import Search from '../../components/search'
+import TableButtons from '../../components/table-buttons'
+import Pagination from '../../components/pagination'
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
 
 export default function ReportsIndex() {
   // TODO: programmatically determine table contents and pagination
@@ -45,5 +45,5 @@ export default function ReportsIndex() {
         <Pagination />
       </div>
     </Layout>
-  );
+  )
 }

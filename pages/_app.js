@@ -1,23 +1,8 @@
-import "bootstrap/dist/css/bootstrap.css";
-import "../styles/globals.scss";
-// TODO remove sample styles
-import "../styles/reset.css";
-import "../styles/main.css";
-
-function SafeHydrate({ children }) {
-  return (
-    <div suppressHydrationWarning>
-      {typeof window === "undefined" ? null : children}
-    </div>
-  );
-}
+import 'bootstrap/dist/css/bootstrap.css'
+import '../styles/globals.scss'
 
 function MyApp({ Component, pageProps }) {
-  return (
-    <SafeHydrate>
-      <Component {...pageProps} />
-    </SafeHydrate>
-  );
+  return <Component {...pageProps} />
 }
 
-export default MyApp;
+export default MyApp

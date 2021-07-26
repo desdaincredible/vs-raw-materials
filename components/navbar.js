@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState } from "react";
 import {
   Collapse,
   Navbar,
@@ -9,21 +9,21 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-} from 'reactstrap'
-import Link from 'next/link'
+} from "reactstrap";
+import Link from "next/link";
 
-import Logo from '../components/logo'
+import Logo from "../components/logo";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSignOutAlt } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navigation() {
-  const [isOpen, setIsOpen] = useState(false)
-  const toggle = () => setIsOpen(!isOpen)
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => setIsOpen(!isOpen);
 
   function logout() {
     // TO DO: switch isLoggedIn to false in db
-    console.log('logout')
+    console.log("logout");
   }
 
   return (
@@ -97,12 +97,12 @@ export default function Navigation() {
             <FontAwesomeIcon
               icon={faSignOutAlt}
               className="my-auto ms-2"
-              style={{ color: '#fff' }}
+              style={{ color: "#fff" }}
               onClick={logout}
             />
           </Nav>
         </Collapse>
       </div>
     </Navbar>
-  )
+  );
 }

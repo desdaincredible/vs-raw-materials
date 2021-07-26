@@ -2,7 +2,7 @@ import Layout from "../../components/layout";
 import Datepicker from "../../components/datepicker";
 import CSVReader from "../../components/csv-reader";
 
-const ReportsNew = () => {
+export default function ReportsNew() {
   return (
     <Layout>
       <h1>Reports</h1>
@@ -16,6 +16,4 @@ const ReportsNew = () => {
       <CSVReader />
     </Layout>
   );
-};
-
-module.exports = ReportsNew;
+}

@@ -6,7 +6,7 @@ import Pagination from "../../components/pagination";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 
-const ReportsIndex = () => {
+export default function ReportsIndex() {
   // TODO: programmatically determine table contents and pagination
   return (
     <Layout>
@@ -46,6 +46,4 @@ const ReportsIndex = () => {
       </div>
     </Layout>
   );
-};
-
-module.exports = ReportsIndex;
+}

@@ -48,4 +48,4 @@ const ReportsIndex = () => {
   );
 };
 
-module.exports = { ReportsIndex };
+module.exports = ReportsIndex;

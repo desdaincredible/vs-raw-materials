@@ -18,4 +18,4 @@ const ReportsNew = () => {
   );
 };
 
-module.exports = { ReportsNew };
+module.exports = ReportsNew;

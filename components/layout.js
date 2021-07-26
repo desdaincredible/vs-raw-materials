@@ -1,16 +1,16 @@
-import Head from 'next/head'
-import { config, dom } from '@fortawesome/fontawesome-svg-core'
-config.autoAddCss = false
-import 'react-datepicker/dist/react-datepicker.css'
+import Head from "next/head";
+import { config, dom } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
+import "react-datepicker/dist/react-datepicker.css";
 
-import Navbar from '../components/navbar'
+import Navbar from "../components/navbar";
 
 export default function Layout({ children }) {
   return (
     <>
       <Head>
         <style>{dom.css()}</style>
-        <link rel="icon" href="cloud-solid.svg" />
+        <link rel="icon" href="/cloud-solid.png" />
 
         <link
           rel="preconnect"
@@ -45,5 +45,5 @@ export default function Layout({ children }) {
 
       <main className="w-75 mx-auto mt-2">{children}</main>
     </>
-  )
+  );
 }

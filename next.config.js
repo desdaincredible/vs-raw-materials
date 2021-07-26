@@ -6,25 +6,24 @@ module.exports = {
   exportPathMap: async function () {
     // const { projects } = data;
     const { pages } = data;
-    let paths = {
+    const paths = {
       "/": { page: "/" },
     };
 
-    // projects.forEach((project) => {
-    //   paths[`/project/${project.slug}`] = {
-    //     page: "/project/[path]",
-    //     query: { path: project.slug },
-    //   };
-    // });
-
-    paths = [];
-
     pages.forEach((page) => {
-      paths.push({
+      paths[`/page/${page.slug}`] = {
         page: page.path ? `/${page.locale}}/${page.path}` : `/${page.locale}`,
+        // page: "/page/[path]",
         query: { path: page.slug },
-      });
+      };
     });
+
+    // pages.forEach((page) => {
+    //   paths.push({
+    //     page: page.path ? `/${page.locale}}/${page.path}` : `/${page.locale}`,
+    //     query: { path: page.slug },
+    //   });
+    // });
 
     return paths;
   },

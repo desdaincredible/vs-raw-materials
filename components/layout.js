@@ -10,7 +10,7 @@ export default function Layout({ children }) {
     <>
       <Head>
         <style>{dom.css()}</style>
-        <link rel="icon" href="/cloud-solid.png" />
+        <link rel="icon" href="/hat.png" />
 
         <link
           rel="preconnect"

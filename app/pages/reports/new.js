@@ -5,7 +5,7 @@ import { Button } from 'reactstrap';
 import Link from 'next/link';
 
 export default function ReportsNew() {
-  const upload = async (e) => {
+  const upload = async () => {
     const res = await fetch(`${process.env.NEXT_PUBLIC_API_URI}/uploadCSV`);
     const data = await res.json();
     console.log(res);
@@ -29,7 +29,7 @@ export default function ReportsNew() {
       <CSVReader />
       <Link href="http://localhost:3000/reports/new/">
         <a
-          onClick={(e) => {
+          onClick={() => {
             upload();
           }}
         >

@@ -1,9 +1,9 @@
 {
-  "name": "nextjs-static-website",
+  "name": "vs-raw-materials",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "NODE_ENV='development' node server.js",
     "build": "next build && next export",
     "start": "next start"
   },
@@ -26,6 +26,8 @@
     "sql-template-strings": "^2.2.2"
   },
   "devDependencies": {
-    "serve": "^11.3.2"
+    "serve": "^11.3.2",
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^1.0.5"
   }
 }

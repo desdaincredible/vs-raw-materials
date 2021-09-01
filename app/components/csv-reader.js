@@ -3,9 +3,18 @@ import { CSVReader } from 'react-papaparse'
 
 export default function CSVParser() {
   const [data, setData] = useState([])
-  const handleOnDrop = (data) => {
-    console.log('on drop --->', data)
+  const handleOnDrop = async (data) => {
     setData(data)
+
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URI}/uploadCSV`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+    const result = await res.json()
+    console.log('result: ', result)
   }
 
   const handleOnError = (err, file, inputElem, reason) => {
@@ -19,18 +28,6 @@ export default function CSVParser() {
 
   const handleOnRemoveFile = (data) => {
     setData([])
-  }
-
-  const upload = async () => {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URI}/uploadCSV`)
-    const data = await res.json()
-    console.log(res)
-
-    if (!data) {
-      return {
-        notFound: true,
-      }
-    }
   }
 
   return (
